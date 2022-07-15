@@ -24,10 +24,7 @@ body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration:overline;
 }
-.header img{
-    max-width: 25px;
-    height:auto;
-}
+
 .left-side h2{
     font-size: 48px;
     font-weight:bolder;
@@ -74,9 +71,19 @@ body{
 .container-one img{
     max-width: 200px;
     height:auto;
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
 }
 .container-one img:hover{
-    transform: scale(-1);
+    transform:scale(1.2);
+    color: #111; 
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(95, 9, 9, 0.5));
+    filter: drop-shadow(12px 1px 2px rgb(100, 14, 14));
+}
+.container-one img:active{
+    transform: scale(1);
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(109, 41, 41, 0.5));
+    filter: drop-shadow(12px 12px 7px rgba(70, 13, 13, 0.5));
 }
 .container-one{
 padding:0px 100px 50px 100px;
