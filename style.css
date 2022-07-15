@@ -150,9 +150,6 @@ justify-content: space-between;
     font-size: 13px;
     text-align: end;
 }
-.container-three .quote{
- 
-}
 
 .container-four{
     padding:40px 100px 40px 100px;
@@ -162,22 +159,60 @@ justify-content: space-between;
     
 }
 .adspace{
-    background-color: #3882F6;;
+    background-color: #3882F6;
     border-radius:5px;
     padding: 15px 20px;
     display:flex;
     justify-content: space-between;
     max-width: 900px;
+    gap:40px;
+
 }
 .container-four .fourleft{
+flex:2;
 display: flex;
 flex-direction: column;
+color:white;
+font-weight: bolder;
+}
+
+.container-four .fourleft p{
+    font-size: 12px;
+
+}
+.container-four h3{
+    text-decoration: underline white;
 }
 .container-four .fourright{
+    flex:1;
     display:flex;
     flex-direction: row;
-    }
-.footer{
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.adspace button{
+    padding: 7px 10px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    background-color:#2571ed;
+    border: 0.5px white solid;
+    width: 150px;
+    height:auto;
+}
+.adspace button:hover{
+    background-color: rgb(89, 47, 89);
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+.adspace button:active{
+    transform: scale(0.98);
+    box-shadow: none;
+}
+
+
+    .footer{
     background-color: #1F2937;
     color: white;
     display: flex;
