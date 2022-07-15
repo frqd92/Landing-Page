@@ -1,0 +1,187 @@
+*{
+    /* border:0.5px solid grey; */
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+body{
+
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;/* this and flex:1 in middle pushes footer down. vh is viewport height, it's put in the outermost parent of the element*/
+}
+.middle{
+   flex: 1; /* this means the middle part will grow to all the available space that isn't taken by header and footer since middle is everything except those two */
+    
+}
+.header, .container-one{
+    background-color: #1F2937;
+}
+.header h3{
+    font-size: 24px;
+    color: #F9FAF8;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration:overline;
+}
+.header img{
+    max-width: 25px;
+    height:auto;
+}
+.left-side h2{
+    font-size: 48px;
+    font-weight:bolder;
+    color:#F9FAF8;
+}   
+.left-side p{
+    font-size: 18px;
+    color:#E5E7EB; 
+    text-align: justify;
+}
+.left-side button{
+    align-self: flex-start;
+    padding:3px 15px;
+    margin-top: 10px;
+    background-color: #3882F6;
+    border-radius: 3px;
+    color:white;
+    }
+.header a{ 
+    text-decoration: none;
+    color: #F9FAF8;
+}
+.header h3:hover{
+    color: rgb(89, 47, 89);
+    text-shadow:2px 2px 8px #FF0000;
+}
+.header ul a:hover{
+    color: rgb(89, 47, 89);
+    text-shadow:2px 2px 8px #FF0000;
+}
+.header ul{
+    font-size: 18px;
+    color:#E5E7EB;
+    list-style: none;
+    display:flex;
+    gap:10px;
+    text-decoration:overline;
+}
+.header{
+   display: flex;
+   justify-content: space-between;
+   padding:20px 100px 50px 100px;
+}
+.container-one img{
+    max-width: 200px;
+    height:auto;
+}
+.container-one img:hover{
+    transform: scale(-1);
+}
+.container-one{
+padding:0px 100px 50px 100px;
+display: flex;
+justify-content: space-between;
+
+
+
+}
+.left-side{
+ display:flex;
+ flex-direction: column;
+ justify-content: center;
+ flex:1;
+
+}
+
+.right-side{
+  flex:2;
+  display: flex;
+  justify-content: end;
+}
+.container-two{
+  padding:0px 100px 50px 100px;
+  margin: 15px 0px;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container-two h4{
+    font-size: 32px;
+    font-weight:900px;
+    color:#1F2937;
+    margin-bottom: 20px;
+}
+.boxes{
+    display:flex;
+    justify-content: center;
+   gap:30px;
+    
+}
+.box{
+
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.container-two p{
+    text-align: center;
+}
+.container-two h1{
+    border:1px solid #3882F6;
+    border-radius: 4px;
+    width:80px;
+    height:80px;
+    text-align: center;
+    padding-top: 20px;
+   
+}
+.container-three{
+    padding:40px 130px 40px 130px;
+    background-color: #E5E7EB;
+    font-size: 28px;
+    font-style: italic;
+    text-align: justify;
+ 
+}
+.container-three h6{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: end;
+}
+.container-three .quote{
+ 
+}
+
+.container-four{
+    padding:40px 100px 40px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.adspace{
+    background-color: #3882F6;;
+    border-radius:5px;
+    padding: 15px 20px;
+    display:flex;
+    justify-content: space-between;
+    max-width: 900px;
+}
+.container-four .fourleft{
+display: flex;
+flex-direction: column;
+}
+.container-four .fourright{
+    display:flex;
+    flex-direction: row;
+    }
+.footer{
+    background-color: #1F2937;
+    color: white;
+    display: flex;
+    padding: 15px 0px;
+    justify-content:center;
+    align-items: center;
+}
